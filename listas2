@@ -1,0 +1,105 @@
+//1. Crie uma lista das suas 5 músicas favoritas, mas você deve criar a lista
+//vazia e colocar os valores depois. Imprima apenas a sua top 1.
+list<String> musicas = new String[5];
+musicas[0] = 'O vencendor, ';
+musicas[1] = 'She, ';
+musicas[2] = 'Ainda é tempo, ';
+musicas[3] = 'Decode, ';
+musicas[4] = 'Bring me to life ';
+system.debug(musicas[0]);
+
+//2. Crie uma lista com os números de 1 à 30 utilizando loop.
+List<integer> numeros = new List<Integer>();
+for(integer i = 1; i<=30; i++) {
+numeros.add(i);
+}
+system.debug(numeros);
+
+//3. Crie uma lista que mostre os anos de nascimento das pessoas da sua
+//família (ex: 1994, 1966, 1973, 1999). Depois, acrescente o ano atual na
+//posição 2 (se a posição é 2, coloque no índice 01) da sua lista usando a
+//função set.
+integer[] anoNascimento = new List <integer>(5);
+anoNascimento.set(0, 1999);
+anoNascimento.set(1, 1998);
+anoNascimento.set(2, 1988);
+anoNascimento.set(3, 2000);
+anoNascimento.set(4, 1985);
+system.debug(anoNascimento);
+anoNascimento.set(1,2023);
+system.debug(anoNascimento);
+
+//4. Crie uma variável tipo String que receba um valor numérico, e depois
+//converta para integer. Dica: Tem no Teachable!✨
+string numero= '123';
+integer numero2= integer.valueOf(numero);
+system.debug(numero +'e'+ numero2);
+
+//5. Crie um map que mostre as características do seu pet. Exemplo: Key:
+//Nome | Valor: Totó | Key: Habilidade| Valor: Roubo de comida | Key: Cor
+//| Valor: Caramelo.... Devem haver pelo menos 5 características.
+map<integer, string> MeuPet = new map <integer, string>();
+MeuPet.put(0, 'SHERLOCK');
+MeuPet.put(1, 'GATO');
+MeuPet.put(2, 'HABILIDADE: DORMIR');
+MeuPet.put(3, 'CINZA');
+MeuPet.put(4, 'SIAMES');
+system.debug(meuPet);
+
+//6. Faça um map pra organizar as temporadas da série Friends, conforme
+//abaixo:
+
+map<integer, string> TempFriends = new map <integer, string>();
+TempFriends.put(0, '1aT- EP 24');
+TempFriends.put(1, '2aT- EP 24');
+TempFriends.put(2, '3aT- EP 25');
+TempFriends.put(3, '4aT- EP 24');
+
+TempFriends.put(4, '5aT- EP 24');
+TempFriends.put(5, '6aT- EP 25');
+TempFriends.put(6, '7aT- EP 24');
+TempFriends.put(7, '8aT- EP 24');
+TempFriends.put(8, '9aT- EP 24');
+TempFriends.put(9, '10aT- EP 18');
+system.debug('A ordem de temporadas e Eps de Friends são: '+tempFriends);
+
+//7. Com suas palavras, explique a diferença entre List, Set e Map.
+//List é uma sequência ordenada que pode ser acessada por índice.
+//Set não pode conter elementos repetidos
+//Map tem a relação de chave e valor e a chave não pode se repetir.
+//8. O famoso cometa Halley se aproxima da Terra a cada 76 anos, e sua
+//última aparição por aqui foi em 1986. Faça uma lista que receba todas
+//as próximas datas em que ele passará pela Terra até o ano 3000, desde
+//essa última aparição.
+List<integer> cometa = new List<Integer>();
+for(integer i = 1986; i<=3000; i+=76) {
+cometa.add(i);
+}
+System.debug(cometa);
+
+//9. Faça dois Maps: Semifinal1 e Semifinal2. Cada Map deve receber nome
+//da seleção(key) e número de gols(value) de 2 países em um jogo da
+//Copa.
+//Ex: Semifinal1 Espanha = 1, França = 3
+//Utilizando If else, calcule quem ganhou a partida e imprima a
+//informação de que o time ganhador está na final. faça isso nos dois
+//Maps e teremos nossos finalistas na Copa 2022 :)
+
+map <string,integer> semiFinal1 = new map <string,integer>();
+semiFinal1.put('Brasil', 0);
+semiFinal1.put('Portugal', 3);
+if(semiFinal1.get('Portugal')>semiFinal1.get('Brasil')){
+System.debug('Portugal está na final');
+
+}Else{
+System.debug('Brasil está na final!');
+}
+
+map <string,integer> semiFinal2 = new map <string,integer>();
+semiFinal2.put('França', 0);
+semiFinal2.put('Espanha', 3);
+if(semiFinal2.get('França')>semiFinal2.get('Espanha')){
+System.debug('França está na final!');
+}Else{
+System.debug('Espanha está na final!');
+}
