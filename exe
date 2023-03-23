@@ -1,0 +1,119 @@
+//1. Defina uma lista de bandas favoritas
+//a. Remova os 2 últimos valores
+//b. Adicione outros 3 Valores após
+List<string>bandasFavoritas = new list<string>();
+bandasFavoritas.add('Los Hermanos');
+bandasFavoritas.add('Braza');
+bandasFavoritas.add('Forfun');
+system.debug(bandasFavoritas);
+
+//__________________________________________________________________
+List<string>bandasFavoritas = new list<string>();
+bandasFavoritas.add('Los Hermanos');
+bandasFavoritas.add('Braza');
+bandasFavoritas.add('Forfun');
+string remover=bandasFavoritas.remove(1);
+
+bandasFavoritas.add('Marcelo Camelo');
+bandasFavoritas.add('Nação Zumbi');
+
+//2. Crie uma lista com 8 índices já pré-definidos.
+//a. Coloque um valor aleatório como 3 posição.
+//b. Adicione uma nova posição com um valor aleatório
+//c. Remova o valor da nova posição
+String[] nomePessoas = new List <String>(8);
+nomePessoas.set(0,'Vanessa');
+nomePessoas.set(1,'Vitoria');
+nomePessoas.set(2,'Rodrigo');
+nomePessoas.set(3,'Marcos');
+nomePessoas.set(4,'Paulo');
+nomePessoas.set(5,'Chico');
+nomePessoas.set(6,'Nina');
+nomePessoas.set(7,'Amanda');
+//Coloca um valor aleatório na posição 3
+
+nomePessoas.set(2,'Aqui');
+//colocar um novo valor
+nomePessoas.remove(2);
+System.debug(nomePessoas);
+
+//3. Crie uma Lista de valores String com 8 nomes de séries. Mostre em formato
+//de ranking esses valores da lista.
+//Ex:
+//As mais assistidas.
+//1 - série x
+//2 - série y
+//.
+//.
+//.
+//8 - série w
+list<String> series = new String[5];
+series[0] = 'The Witcher: Rank1 ; ';
+series[1] = 'Friends: Rank2; ';
+series[2] = 'How i meet your mother: Rank3; ';
+series[3] = 'Senhor dos aneis: Rank4; ';
+series[4] = 'Chaves: Rank5; ';
+system.debug(series[4] + series[2] + series[0]);
+
+//4. Crie uma Lista com os seguintes valores (A, B, C, D, E, F). Baseado nas
+//posições dessa lista, imprima as seguintes palavras.
+a. FACA
+b. BABA
+c. FADA
+d. ACABADA
+
+String[] letras = new List <String>(5);
+letras.set(0,'A');
+letras.set(1,'B');
+letras.set(2,'C');
+letras.set(3,'D');
+letras.set(4,'F');
+System.debug(letras[4]+letras[0]+letras[2]+letras[0]);
+System.debug(letras[1]+letras[0]+letras[1]+letras[0]);
+System.debug(letras[4]+letras[0]+letras[3]+letras[0]);
+System.debug(letras[0]+letras[2]+letras[0]+letras[1]+letras[0]+letras[3]+letras[0]);
+
+//5. Crie um Map com chave e valores String. Com os valores abaixo,
+//respectivamente:
+//a. key - valor
+//b. empresa - mamaco corp
+//c. ceo - romero brito
+//d. valor - 8000000
+//e. cnpj - 1233210001-99
+
+map<string,string> campos = New Map <string,String>();
+campos.put('123','Zezinho');
+campos.put('Valor', '8000000');
+campos.put('CNPJ','1233210001-99');
+campos.put('empresa','mamaco corps');
+campos.put('Ceo','Romero Brito');
+system.debug(campos);
+
+//Com o Map criado mostre a seguinte frase, através das chaves e valores: (obs
+//*indica os valores existentes no map*)
+//“A empresa *mamaco corp* alcançou o valor de mercado de *8000000*. O CEO
+//*romero brito* declarou ser o primeiro passo para dominar o mundo.”
+
+//6. Crie uma três listas de itens pra assistir jogo de estreia do Brasil
+//na Copa:
+//a. Lista de quem você convocaria para a seleção Brasileira
+//(pode ser qualquer um, não precisa nem ser jogador);
+//b. Lista com os itens para fazer um churrasco;
+//c. Lista com os itens de bebidas pro churrasco.
+
+List<string>jogadores = new list<string>();
+jogadores.add('Jogador 1');
+jogadores.add('Jogador 2');
+jogadores.add('Jogador 3');
+system.debug(jogadores);
+List<string>churrasco = new list<string>();
+churrasco.add('carne');
+churrasco.add('carvão');
+
+churrasco.add('fogo');
+system.debug(churrasco);
+List<string>bebidas = new list<string>();
+bebidas.add('água');
+bebidas.add('refrigrente');
+bebidas.add('suco');
+system.debug(bebidas);
